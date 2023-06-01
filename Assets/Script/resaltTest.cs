@@ -8,14 +8,9 @@ public class resaltTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // クラスのNCMBObjectを作成
-        NCMBObject testClass = new NCMBObject("TestClass");
-
-        // オブジェクトに値を設定
-
-        testClass["message"] = "Hello, NCMB!";
-        // データストアへの登録
-        testClass.SaveAsync();
+        var millsec = 123456;
+        var timeScore = new System.TimeSpan (0, 0, 0, 0, millsec);
+        naichilab.RankingLoader.Instance.SendScoreAndShowRanking (timeScore);
     }
 
     // Update is called once per frame
