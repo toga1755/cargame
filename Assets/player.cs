@@ -2,39 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(CapsuleCollider2D))]
+
 public class player : MonoBehaviour
 {
-    private float speed = 0.05f;
+    [SerializeField] private Rigidbody2D rb;
 
-    void Start()
-    {
-    }
+    [SerializeField] private int moveSpeed;
+    [SerializeField] private int jumpForce;
+
+    private bool isJumping = false;
 
     void Update()
     {
-        Vector2 position = transform.position;
-
-        if (Input.GetKey("left"))
+        if (Input.GetKeyDown(KeyCode.Space) && !isJumping && !(rb.velocity.y < -0.5f))
         {
-            position.x -= speed;
+            Jump();
         }
-        else if (Input.GetKey("right"))
-        {
-            position.x += speed;
-        }
+        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y);
+    }
+    void Jump()
+    {
+        isJumping = true;
 
-       
-        else if (Input.GetKey("up"))
-        {
-            position.y += speed;
-        }
-        else if (Input.GetKey("down"))
-        {
-            position.y -= speed;
-        }
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+    }
 
-
-       
-        transform.position = position;
+     void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Stage"))
+        {
+            isJumping = false;
+        }
     }
 }
