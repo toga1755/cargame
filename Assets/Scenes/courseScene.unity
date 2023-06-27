@@ -1395,8 +1395,8 @@ GameObject:
   - component: {fileID: 1236422242}
   - component: {fileID: 1236422241}
   - component: {fileID: 1236422240}
-  - component: {fileID: 1236422246}
   - component: {fileID: 1236422247}
+  - component: {fileID: 1236422248}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -1520,21 +1520,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1236422246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236422238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 750e167e08c6c8e418ae17eed47bb2fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 1236422241}
-  moveSpeed: 10
-  jumpForce: 8
 --- !u!70 &1236422247
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1551,6 +1536,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1.5}
   m_Direction: 1
+--- !u!114 &1236422248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236422238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 750e167e08c6c8e418ae17eed47bb2fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1236422241}
+  moveSpeed: 10
+  jumpForce: 8
 --- !u!1 &1243319960
 GameObject:
   m_ObjectHideFlags: 0
