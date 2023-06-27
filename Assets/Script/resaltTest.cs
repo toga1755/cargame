@@ -8,7 +8,7 @@ public class resaltTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var millsec = 123456;
+        var millsec = (Timer.countTime);
         var timeScore = new System.TimeSpan (0, 0, 0, 0, millsec);
         naichilab.RankingLoader.Instance.SendScoreAndShowRanking (timeScore);
     }
