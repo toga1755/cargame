@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/titleScene.unity
     guid: 3f496e8e06b3e624ebe1b99f6cc1264d
   - enabled: 1
-    path: Assets/Scenes/courseScene.unity
+    path: Assets/Scenes/1_courseScene.unity
     guid: 8e1f81f0f9ff31d4cb21f9734f95428e
   - enabled: 1
     path: Assets/Scenes/resaltScene.unity
