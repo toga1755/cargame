@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a70574be0ea4044ac8d85c166124b3b1, type: 3}
-  m_Name: RankingInfo
+  m_Name: RankingInfo_1
   m_EditorClassIdentifier: 
   BoardName: "\u30AF\u30EA\u30A2\u30BF\u30A4\u30E0"
   ClassName: TimeHiScore
