@@ -53902,7 +53902,7 @@ GameObject:
   - component: {fileID: 2085638368}
   - component: {fileID: 2085638367}
   - component: {fileID: 2085638370}
-  - component: {fileID: 2085638369}
+  - component: {fileID: 2085638371}
   m_Layer: 0
   m_Name: goal
   m_TagString: Untagged
@@ -53977,18 +53977,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2085638369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085638366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6c64901a023fac4fa651c32478bc813, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2085638370
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54015,6 +54003,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2085638371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085638366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9bc04ad0e3cf8b47b25b616ecbd3a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2109563231
 GameObject:
   m_ObjectHideFlags: 0

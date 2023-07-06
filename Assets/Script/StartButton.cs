@@ -19,6 +19,6 @@ public class StartButton : MonoBehaviour
 
     public void OnClickStartButton()
     {
-        SceneManager.LoadScene("courseScene");
+        SceneManager.LoadScene("1_courseScene");
     }
 }

@@ -12,8 +12,20 @@ EditorBuildSettings:
     path: Assets/Scenes/1_courseScene.unity
     guid: 8e1f81f0f9ff31d4cb21f9734f95428e
   - enabled: 1
-    path: Assets/Scenes/resaltScene.unity
+    path: Assets/Scenes/1_resaltScene.unity
     guid: 492d87686bd6e364d992df8b4933b494
+  - enabled: 1
+    path: Assets/Scenes/2_courseScene.unity
+    guid: f23bdc2ca3330354389d7dd4524875c6
+  - enabled: 1
+    path: Assets/Scenes/2_resaltScene.unity
+    guid: 6995232d26ce66b468f6f6b9fae4c7c2
+  - enabled: 1
+    path: Assets/Scenes/3_courseScene.unity
+    guid: 641ecc8fa8f21444990dcb5a2821228c
+  - enabled: 1
+    path: Assets/Scenes/3_resaltScene.unity
+    guid: 0f4a5ffcd546f164795556af5a617239
   - enabled: 1
     path: Assets/naichilab/unity-simple-ranking/Scenes/Ranking.unity
     guid: 152244f5855414ac4a3874f14efa583c
