@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CapsuleCollider2D))]
@@ -11,8 +12,17 @@ public class player : MonoBehaviour
 
     [SerializeField] private int moveSpeed;
     [SerializeField] private int jumpForce;
+    [SerializeField] private GameObject[] _player;
 
     private bool isJumping = false;
+
+    int _select;
+
+    void Start()
+    {
+        _selected = PlayerPrefs.GetInt("PlayerSelect", 0);
+        _player[_selected].SetActive(true);
+    }
 
     void Update()
     {
