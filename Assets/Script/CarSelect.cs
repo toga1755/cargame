@@ -28,7 +28,7 @@ public class CarSelect : MonoBehaviour
         if (_selected >= _car.Length)
             _selected = 0;
         _car[_selected].SetActive(true);
-        PlayerPrefs.SetInt("carSelect", _selected);
+        PlayerPrefs.SetInt("CarSelect", _selected);
     }
 
     public void Left()
@@ -38,6 +38,6 @@ public class CarSelect : MonoBehaviour
         if (_selected < 0)
             _selected = _car.Length - 1;
         _car[_selected].SetActive(true);
-        PlayerPrefs.SetInt("carSelect", _selected);
+        PlayerPrefs.SetInt("CarSelect", _selected);
     }
 }

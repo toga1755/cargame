@@ -13,6 +13,7 @@ public class player : MonoBehaviour
     [SerializeField] private int moveSpeed;
     [SerializeField] private int jumpForce;
     [SerializeField] private GameObject[] _player;
+    private int _selected = 0;
 
     private bool isJumping = false;
 
@@ -20,7 +21,7 @@ public class player : MonoBehaviour
 
     void Start()
     {
-        _selected = PlayerPrefs.GetInt("PlayerSelect", 0);
+        _selected = PlayerPrefs.GetInt("CarSelect", 0);
         _player[_selected].SetActive(true);
     }
 
